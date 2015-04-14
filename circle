@@ -6,7 +6,7 @@ deployment:
 		branch: master
 dependencies:
 	pre:
-		- pip install autopep8
+	- pip install autopep8
 	
 
 
