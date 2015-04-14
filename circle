@@ -1,12 +1,12 @@
 machine:
-		python:
+	python:
 		version:2.7.6
 deployment:
-		production:
-				branch: master
+	production:
+		branch: master
 dependencies:
-		pre:
-			- pip install autopep8
+	pre:
+		- pip install autopep8
 	
 
 
