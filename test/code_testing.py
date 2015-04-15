@@ -6,11 +6,10 @@ import os
 class Testing(unittest.TestCase):
     def test_pepexample(self):
         #Converting code into pep8 style
-        path = '/home/ubuntu/autopep_testing/test/code_testing.py'
-        subprocess.check_output('autopep8 --in-place --aggressive --aggressive ' + path)
+        subprocess.check_output('autopep8 --in-place --aggressive --aggressive /test/test_file.py')
         try:
             #checking the code against pep8
-            subprocess.check_output('pep8 --first ' + path)
+            subprocess.check_output('pep8 --first /test/test_file.py')
             status = 0
         except:
             status = 1
