@@ -4,10 +4,7 @@ machine:
 deployment:
   production:
     branch: master
-dependencies:
-  pre:
-    -sudo apt-get install autopep8
-    -pip install autopep8
+
 	
 
 
