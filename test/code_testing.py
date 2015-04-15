@@ -13,7 +13,8 @@ class Testing(unittest.TestCase):
         os.system('autopep8 --in-place --aggressive --aggressive ' + path)
         try:
             #checking the code against pep8
-            # subprocess.check_output('pep8 --first ../test_file.py')
+            print 'rnu'
+            os.system('pep8 --first ' + path)
             status = 0
         except:
             status = 1
