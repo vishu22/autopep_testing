@@ -10,7 +10,7 @@ class Testing(unittest.TestCase):
         path = os.getcwd() + '/test/test_file.py'
         print os.path.exists(path)
         print path
-        subprocess.check_output('autopep8 --in-place --aggressive --aggressive ' + path)
+        os.system('autopep8 --in-place --aggressive --aggressive ' + path)
         try:
             #checking the code against pep8
             # subprocess.check_output('pep8 --first ../test_file.py')
