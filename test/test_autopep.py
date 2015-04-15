@@ -11,6 +11,7 @@ class Testing(unittest.TestCase):
             status = 0
         except:
             status = 1
+            print "test case cleared"
         self.assertEqual(status,0)
 unittest.main()
 
