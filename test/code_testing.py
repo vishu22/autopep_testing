@@ -8,6 +8,7 @@ class Testing(unittest.TestCase):
         #Converting code into pep8 style
         print os.getcwd()
         path = os.getcwd() + '/test/test_file.py'
+        print os.path.exists(path)
         print path
         subprocess.check_output('autopep8 --in-place --aggressive --aggressive ' + path)
         try:
